@@ -1,0 +1,86 @@
+.right {
+    background-image: linear-gradient(to top right, #571058, #8d328d);
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
+}
+
+
+.selected {
+    width: 400px;
+    z-index: 3;
+    position: relative;
+    top: 150px;
+    left: 150px;
+}
+
+.backImages {
+    display: none;
+}
+
+.shadow {
+    position: absolute;
+    top: 138px;
+    left: 177px;
+    width: 345px;
+    height: 30px;
+    background-color: #946296;
+    z-index: 2;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.shadow2 {
+    position: absolute;
+    top: 130px;
+    left: 195px;
+    width: 310px;
+    height: 50px;
+    background-color: #884589;
+    z-index: 1;
+    border-radius: 10px 10px 0 0;
+}
+
+.rightButton {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    border: none;
+    color: #571058;
+    background-color: "white";
+    font-size: 25px;
+    height: 40px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
+
+.heading {
+    position: absolute;
+    top: 70%;
+    left: 28%;
+    font-size: 30px;
+    color: white;
+}
+
+.para {
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-size: 15px;
+    justify-content: center;
+    color: white;
+}
+
+.leftButton {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    border: none;
+    height: 40px;
+    color: #571058;
+    font-size: 25px;
+    background-color: "white";
+    aspect-ratio: 1;
+    border-radius: 100%;
+}
