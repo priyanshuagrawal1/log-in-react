@@ -47,7 +47,7 @@ export const Login = () => {
                 </div>
                 <div className='login'>
                     <h2 className='login__title' >Log in</h2><br></br>
-                    <span className=''>Welcome to Camel cloud, please put your login credentials below to start using the app</span><br /><br />
+                    <span className='subtitle'>Welcome to Camel cloud, please put your login credentials below to start using the app</span><br /><br />
                     <form onSubmit={handleSubmit}>
                         <div className='InputFields'>
                             <label>E-mail</label>

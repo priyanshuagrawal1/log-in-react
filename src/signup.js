@@ -64,7 +64,7 @@ export const Signup = () => {
                 </div>
                 <div className='login'>
                     <h2 className='login__title' >Create account</h2><br></br>
-                    <span className=''>Get access to exclusive features by creating an account</span><br /><br />
+                    <span className='subtitle'>Get access to exclusive features by creating an account</span><br /><br />
                     <form onSubmit={handleSubmit}>
                         <div className='InputFields'>
                             <label>Name</label>

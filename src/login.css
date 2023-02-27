@@ -45,7 +45,8 @@ label {
     width: 200px;
     box-shadow: 0 1px 8px rgba(92, 92, 92, 0.2);
     font-size: 13px;
-    padding: 6px 12px;
+    font-family: goldencoast;
+        padding: 6px 12px;
     border-radius: 5px;
 }
 
@@ -60,6 +61,36 @@ input:focus {
     outline: 1px solid #a04899;
 }
 
+.subtitle {
+    font-family: GERALDINE;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: sunnySpells;
+    font-weight: 400;
+}
+
+
+label {
+    font-family: Millenia;
+    font-weight: 200;
+}
+
+a {
+    font-family: TheGlobe;
+    font-weight: 400;
+}
+
+button {
+    font-family: Majestic;
+    font-weight: 400;
+}
+
+.login__signup {
+    font-family: candyCane;
+    font-weight: 100;
+}
 
 .login__button {
     color: white;
@@ -68,7 +99,7 @@ input:focus {
     font-size: 13px;
     padding: 6px 12px;
     border-radius: 6px;
-
+    cursor: pointer;
 }
 
 .fields {
@@ -83,7 +114,7 @@ input:focus {
     background: #fefffe;
     position: absolute;
     box-shadow: 0 1px 1px rgba(92, 92, 92, 0.2);
-    font-family: Branding;
+    font-family: dirtyBoy;
     font-size: 20px;
     height: 5%;
     width: 100%;
@@ -106,4 +137,43 @@ input:focus {
 @font-face {
     font-family: Branding;
     src: url("../fonts/Branding_Light_Italic.otf") format("opentype");
+}
+@font-face {
+    font-family: dirtyBoy;
+    src: url("../fonts/DirtyBoy.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: goldencoast;
+    src: url("../fonts/goldencoast.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GERALDINE;
+    src: url("../fonts/Geraldine.ttf") format("trueType");
+}
+
+@font-face {
+    font-family: sunnySpells;
+    src: url("../fonts/Sunnyspells.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Millenia;
+    src: url("../fonts/Millenia.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: TheGlobe;
+    src: url("../fonts/TheGlobe.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Majestic;
+    src: url("../fonts/Majestic.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: CandyCane;
+    src: url("../fonts/CandyCane.ttf") format("truetype");
 }
