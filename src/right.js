@@ -17,7 +17,7 @@ export default function Right() {
         if (index > images.length - 1) {
             index = 0;
         }
-        console.log(baseText);
+
         setIndex(index)
     }
     function downImage() {
@@ -26,7 +26,7 @@ export default function Right() {
             index = images.length - 1;
         }
         baseText = headings[index];
-        console.log(baseText);
+
         setIndex(index)
     }
     return (
@@ -39,9 +39,14 @@ export default function Right() {
             <img src={image1} alt="Logo" className={index === 2 ? "selected" : "backImages"} />
 
             <div className="bottomText">
-                <h1 className="heading">{baseText}</h1>
+                <h2 className="heading">{baseText}</h2>
                 <p className="para">Camel Cloud's visual integration builder lets you build integrations in real time in a beautiful, intuitive way.</p>
                 <button className="leftButton" onClick={downImage}> <ArrowLeftLine /></button>
+                <div className="navigation">
+                    <div className={index === 0 ? "selectedDot" : "dot"}></div>
+                    <div className={index === 1 ? "selectedDot" : "dot"}></div>
+                    <div className={index === 2 ? "selectedDot" : "dot"}></div>
+                </div> 
                 <button className="rightButton" onClick={upImage} > <ArrowRightLine /></button>
             </div>
         </div >

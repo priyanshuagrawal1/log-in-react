@@ -81,8 +81,7 @@ input:focus {
 }
 
 .left {
-    /* background-image: linear-gradient(to top right, #571058, #8d328d); */
-    position: absolute;
+    position: relative;
     left: 0;
     height: 100%;
     width: 50%;

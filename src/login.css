@@ -1,6 +1,6 @@
 .login {
-    position: absolute;
-    top: 20%;
+    position: relative;
+    top: 15%;
     left: 20%;
     right: 20%;
     aspect-ratio: 1;
@@ -9,14 +9,19 @@
     flex-direction: column;
     align-items: flex-start;
 }
-
+.errorFields {
+    grid-gap: 10px !important;
+}
 .InputFields {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+        grid-gap: 20px;
+        
 }
 
-
+.termsError {
+    justify-content: flex-start;
+}
 .line {
     width: 100%;
     height: 0.11px;
@@ -25,13 +30,8 @@
     margin: 10px 0px;
 }
 
-form {
-    width: 100%;
-}
-
 label {
     font-size: 18px;
-    margin: 10px 0px;
 }
 
 * {
@@ -39,16 +39,7 @@ label {
     padding: 0;
 }
 
-.login__input {
-    border: none;
-    height: 15px;
-    width: 200px;
-    box-shadow: 0 1px 8px rgba(92, 92, 92, 0.2);
-    font-size: 13px;
-    font-family: goldencoast;
-        padding: 6px 12px;
-    border-radius: 5px;
-}
+
 
 button:disabled,
 button[disabled] {
@@ -56,40 +47,43 @@ button[disabled] {
     background-color: #cccccc;
     color: #666666;
 }
-
-input:focus {
-    outline: 1px solid #a04899;
+button {
+    cursor: pointer;
 }
 
+
 .subtitle {
-    font-family: GERALDINE;
-    font-weight: 100;
+    font-family: NotoSans;
+        font-size: 12px;
+        color: #5e5e5e;
 }
 
 h2 {
-    font-family: sunnySpells;
-    font-weight: 400;
+    font-family: NotoSans;
+        font-weight: 800;
 }
 
-
 label {
-    font-family: Millenia;
-    font-weight: 200;
+    font-family: NotoSans;
+        font-weight: 600;
+        font-size: 13px;
+        display: inline-block;
 }
 
 a {
-    font-family: TheGlobe;
-    font-weight: 400;
+        font-family: NotoSans;
+            font-weight: 600;
 }
-
 button {
-    font-family: Majestic;
+    font-family: NotoSans;
     font-weight: 400;
 }
 
 .login__signup {
-    font-family: candyCane;
-    font-weight: 100;
+    font-family: NotoSans;
+        font-weight: 400;
+        color: #5e5e5e;
+        font-size: 13px;
 }
 
 .login__button {
@@ -99,13 +93,10 @@ button {
     font-size: 13px;
     padding: 6px 12px;
     border-radius: 6px;
-    cursor: pointer;
 }
 
-.fields {
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
+hr {
+    margin: 10px;
 }
 
 .header {
@@ -119,7 +110,6 @@ button {
     height: 5%;
     width: 100%;
     border-radius: 20px 0px 0px 0;
-    /* font-weight: 200; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,6 +122,7 @@ button {
     height: 100%;
     width: 50%;
     background-color: #f8f9fa;
+    border-radius: 40px 0px 0px 0;
 }
 
 @font-face {
@@ -176,4 +167,33 @@ button {
 @font-face {
     font-family: CandyCane;
     src: url("../fonts/CandyCane.ttf") format("truetype");
+}
+@font-face {
+    font-family: NotoSans;
+    font-weight: 300;
+    src: url("../fonts/NotoSans-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NotoSans;
+    font-weight: 400;
+    src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NotoSans;
+    font-weight: 500;
+    src: url("../fonts/NotoSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NotoSans;
+    font-weight: 600;
+    src: url("../fonts/NotoSans-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: NotoSans;
+    font-weight: 800;
+    src: url("../fonts/NotoSans-ExtraBold.ttf") format("truetype");
 }

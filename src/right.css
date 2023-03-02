@@ -4,12 +4,14 @@
     right: 0;
     height: 100%;
     width: 50%;
+    border-radius: 0px 40px 0px 0px;
 }
 
 
 .selected {
     width: 400px;
     z-index: 3;
+
     position: relative;
     top: 150px;
     left: 150px;
@@ -58,29 +60,58 @@
 .heading {
     position: absolute;
     top: 70%;
-    left: 28%;
-    font-size: 30px;
+    left: 32%;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
 }
 
 .para {
     position: absolute;
-    top: 80%;
-    left: 5%;
-    font-size: 15px;
+    top: 78%;
+    left: 20%;
+    font-size: 13px;
     justify-content: center;
     color: white;
+    text-align: center;
+    max-width: 60ch;
+    font-family: 'NotoSans';
 }
+.navigation{
+    display: flex;
+    padding-right: 20px;
+        position: absolute;
+            bottom: 60px;
+            left: 340px;
+}
+    .dot {
+        width: 9px;
+        height: 9px;
+        background-color: white;
+        opacity: 0.5;
+        border-radius: 50%;
+            margin: 0px 3px;
+    }
 
-.leftButton {
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
-    border: none;
-    height: 40px;
-    color: #571058;
-    font-size: 25px;
-    background-color: "white";
-    aspect-ratio: 1;
-    border-radius: 100%;
-}
+    .selectedDot {
+        position: relative;
+        width: 13px;
+            height: 13px;
+            bottom: 2px;
+            margin:0px 3px;
+            background-color: white;
+            border-radius: 50%;
+    }
+
+    .leftButton {
+        position: absolute;
+        bottom: 50px;
+        left: 20px;
+        border: none;
+        height: 40px;
+        color: #571058;
+        font-size: 25px;
+        background-color: "white";
+        aspect-ratio: 1;
+        border-radius: 100%;
+    }
